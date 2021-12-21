@@ -1,0 +1,68 @@
+/*
+1、 vw是相对视口（viewport）的宽度而定的，长度等于视口宽度的1/100
+    假如浏览器的宽度为200px，那么1vw就等于2px（200px/100）
+    vh是相对视口（viewport）的高度而定的，长度等于视口高度的1/100
+    vmin和vmax是相对于视口的高度和宽度两者之间的最小值或最大值
+    ==========================================================
+2、 var()变量
+    定义语法 : - -变量名 两个短横线加上变量名
+    ==========================================================
+3、 calc()函数
+    动态计算长度值
+    calc()函数支持 “+”, “-”, “*”, “/” 运算
+    运算符前后都需要保留一个空格
+    */
+    *,*::before,*::after{
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: #9c9c9c;
+        margin:0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    h1{
+        margin-left: 20px;
+        font-size: 100px  !important ;
+        text-align: center;
+        color:#0a0a26  !important ;
+        font-family: 'Freckle Face'  !important ;
+      }
+      .gua-container {  
+          width: 600px;
+          height: 450px;
+          position: relative;
+          margin: auto;
+          background-color: black;
+          border-radius: 20px;
+      }
+      
+      .piano {
+          display: flex;
+      }
+      .key{
+          height: calc(var(--width) * 4);
+          width: var(--width);
+      }
+      .white {
+        --width:100px;
+        background-color: white;
+        border: 1px solid #333;
+    }
+    .white.active {
+        background-color: #CCC;
+    }
+    .black {
+        --width:60px;
+        background-color: black;
+        margin-left: calc(var(--width) / -2);
+        margin-right: calc(var(--width) / -2);
+        z-index: 2;
+    }
+    .black.active{
+        background-color: #333;
+    }
+      

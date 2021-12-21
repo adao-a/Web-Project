@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom_test03</title>
+</head>
+<body>
+    <p>点击按钮执行displayDate()函数</p>
+    <button id="Btn_1" onclick="displayDate_1()">click_1</button>
+    <button id="Btn_2">click_2</button>
+    <script>
+        function displayDate_1() {
+            document.getElementById("p1").innerHTML=Date();
+        }
+
+        document.getElementById("Btn_2").onclick=function(){
+            displayDate_2()
+        }
+        function displayDate_2(){
+        document.getElementById("p2").innerHTML=Date();
+    }
+    </script>
+    <p id="p1"></p>
+    <p id="p2"></p>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>循环内嵌数组</p>
+    <p id="demo"></p>
+    <script>
+        var i,j,x="",obj;
+        obj={
+            "name":"网站",
+            "num":3,
+            "size":[
+                {"name":"Google","info":["Andriod","Google搜索","Google翻译"]},
+                {"name":"Runboob","info":["菜鸟教程","菜鸟工具","菜鸟微信"]},
+                {"name":"Taobao","info":["淘宝","网购"]}
+            ]
+        }
+        for(i in obj.size) { 
+            x+="<h1>"+obj.size[i].name+"</h1>";
+            for(j in obj.size[i].info) {
+                x+=obj.size[i].info[j]+"<br>";
+            }
+            document.getElementById("demo").innerHTML=x;
+        }
+    </script>
+</body>
+</html>

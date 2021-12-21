@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML DOM 事件</title>
+</head>
+<body>
+    <p>在 window 对象中使用 addEventListener() 方法。</p>
+    <p>刷新触发'resize'事件句柄。</p>
+    <p id="id1"></p>
+    <script>
+        window.addEventListener("resize", function(){
+            document.getElementById("demo").innerHTML = Math.random();
+        });
+        </script>
+</body>
+</html>

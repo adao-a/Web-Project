@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #myDiv {
+            background-color: coral;
+            border: 1px solid;
+            padding: 50px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="myDiv">
+        <p>移动鼠标，显示随机数</p>
+        <button id="myBtu" onclick="remove()">click</button>
+    </div>
+    <p id="id1"></p>
+    <script>
+        document.getElementById("myDiv").addEventListener("mousemove",myFunction);
+        function myFunction(){
+            document.getElementById("id1").innerHTML=Math.random();
+        }
+        function remove() {
+            document.getElementById("myDiv").removeEventListener("mousemove",myFunction);
+        }
+    </script>
+</body>
+</html>

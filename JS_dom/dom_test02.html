@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom_test02</title>
+</head>
+<body>
+</body>
+    <div id="main">
+        <p>Hi!</p>
+        <p id="intro">Hello!</p>
+        <p>使用<b>getElementByTagName方法</b></p>
+    </div>
+    <script>
+        var x=document.getElementById("main");   //Element
+        var y=document.getElementsByTagName("p");   //Elements
+        document.write('id="main"元素中的第二个段落为：' + y[1].innerHTML);
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom css</title>
+</head>
+<body>
+    <p>改变 HTML 元素的样式:<b>document.getElementById(id).style.property=新样式</b></p>
+    <p id="p1">Hi World!</p>
+    <p id="p2">Hi World!</p>
+    <h1 id="h11">标题</h1>
+    <button type="button" onclick="document.getElementById('h11').style.color='red'">click</button>
+    <script> 
+        document.getElementById("p2").style.color="red";
+        document.getElementById("p1").style.fontSize="43px";
+    </script>
+</body>
+</html>

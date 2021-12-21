@@ -1,0 +1,154 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+.container {
+    padding:10px;
+    width: 400px;
+    margin:0 auto;
+    z-index: 0;
+}
+
+    /*--------------------aside--------------------*/
+#aside{
+    position: absolute;
+    width: 200px;
+    height:610px;
+    z-index: 1;
+    background: #20284b;
+    display: none;
+}
+
+#aside i{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 20px;
+    color: azure;
+} 
+
+#aside i:hover{
+    cursor: pointer;
+}
+
+    /*--------------------header--------------------*/
+.header{
+    height: 150px;
+    width: 400px;
+   background-color: hsl(54, 83%, 45%);
+    position:relative;
+    border-radius: 10px 10px 0 0;
+}
+.clear{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+.clear i{
+    font-size: 20px;
+    color: azure;
+}
+.clear i:hover{
+    cursor: pointer;
+}
+.date{
+    position: absolute;
+    bottom:10px;
+    left: 10px;
+    font-size: 25px;
+}
+.date p{
+    margin: 0;
+}
+.date p strong{
+    font-size: 33px;
+}
+    /*--------------------body--------------------*/
+.body{
+    height: 400px;
+    width: 400px;  
+    background-color: aliceblue;
+}
+.body ul{
+    padding: 0;
+    margin: 0;
+}
+.item{
+    background-color:aliceblue;
+    list-style: none;
+    width: 400px;
+    height: 40px;
+    min-height: 40px;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+li:hover{
+    background-color:hsl(208, 30%, 82%)
+}
+
+.item i.co{
+    position: absolute;
+    font-size: 20px;
+    padding-left: 5px;
+    left: 10px;
+    top: 10px;
+}
+.item i.co:hover{
+    color: #c5b100;
+    cursor: pointer;
+}
+.item p.text{
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    left:45px ;
+    top: 5px;
+}
+.item i.done{
+    position: absolute;
+    font-size: 20px;
+    right: 20px;
+    top: 10px;
+}
+.item i.done:hover{
+    color:#c5b100;
+    cursor: pointer;
+}
+.lineThrough{
+    text-decoration: line-through;
+     color : #ccc;
+ }
+    /*--------------------add--------------------*/
+.add-to-do{
+    height: 60px;
+    width: 400px;
+    background-color: rgb(200, 216, 230);
+}
+.add-to-do i{
+    position: relative;
+    top: 13px;
+    left: 8px;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    color: #20284b;
+}
+.add-to-do input{
+    position: relative;
+    left: 10px;
+    top: 3px;
+    height: 30px;
+    width: 340px;
+    font-size: 20px;
+    border: none;
+    opacity: 0.6;   /*透明度*/
+}
+
+.add-to-do input:hover{
+    opacity: 0.9;
+}
