@@ -49,7 +49,7 @@ function add(x, id, done, trash){
     }
 input.onkeydown=function(e){
     if(e.keyCode == 13){ //keycode ==13 为回车键
-        const x=input.value;
+        const x = input.value;
         if(x){
         add(x, id, false, false); 
         LIST.push({
@@ -60,9 +60,15 @@ input.onkeydown=function(e){
         });
         localStorage.setItem("TODOLIST",JSON.stringify(LIST));
         id++;
+
     }
         }
-        input.value=" ";
+     /*
+        错误：一次只能输入一个英文字母
+        原因：""不等于" "
+        */
+        input.value="";
+        
     }
 
     function li_complete(element){
@@ -115,10 +121,3 @@ var weekday = new Array(7);
     //toLocaleDateString() 方法，根据本地时间把 Date 对象的日期部分转换为字符串:
     time.innerHTML = d.toLocaleDateString();
 
-    /*----------------侧边导航栏-----------------*/
-var aside = docuemnt.getElementById("aside");
-function openaside(){
-} 
-function closeaside(){
-    aside.style.display = "none";
-}

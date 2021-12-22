@@ -9,27 +9,7 @@ body{
     z-index: 0;
 }
 
-    /*--------------------aside--------------------*/
-#aside{
-    position: absolute;
-    width: 200px;
-    height:610px;
-    z-index: 1;
-    background: #20284b;
-    display: none;
-}
 
-#aside i{
-    position: absolute;
-    left: 15px;
-    top: 15px;
-    font-size: 20px;
-    color: azure;
-} 
-
-#aside i:hover{
-    cursor: pointer;
-}
 
     /*--------------------header--------------------*/
 .header{
