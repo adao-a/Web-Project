@@ -60,14 +60,14 @@ input.onkeydown=function(e){
         });
         localStorage.setItem("TODOLIST",JSON.stringify(LIST));
         id++;
-
+        input.value="";
     }
         }
      /*
         错误：一次只能输入一个英文字母
         原因：""不等于" "
         */
-        input.value="";
+
         
     }
 
