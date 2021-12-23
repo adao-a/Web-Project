@@ -1,0 +1,22 @@
+#div1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: aqua;
+}
+
+#div2{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 100%;
+    display:block;
+    clear: both;
+    position: absolute;
+    z-index: 2;
+}
+
+#sideNav{
+    margin: 0;
+    padding: 0;
+}
