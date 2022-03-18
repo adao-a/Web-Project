@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css" />
+  <title>画图</title>
+</head>
+
+<body>
+  <div class="bg-img"></div>
+
+  <canvas id="canvas"></canvas>
+
+  <a class="grammyli" target="_blank" href="https://grammyli.com">@grammyli</a>
+
+  <nav class="tools-bar">
+    <div class="button button-clear" data-clear></div>
+    <img class="button button-wipe" src="./img/wipe.svg" alt="">
+    <!-- <div class="button button-wipe"></div> -->
+    <img src="./img/Pho.svg" alt="" class="button button-Photograph">
+    <!-- <div class="button button-Photograph"></div> -->
+  </nav>
+
+  <nav class="thickness-bar bar" data-type="thickness">
+    <div class="thickness active" data-thickness="4"></div>
+    <div class="thickness" data-thickness="12"></div>
+    <div class="thickness" data-thickness="24"></div>
+    <div class="thickness" data-thickness="48"></div>
+    <div class="thickness" data-thickness="128"></div>
+  </nav>
+
+  <nav class="color-bar bar" data-type="color">
+    <div class="color" data-color="#9b59b6"></div>
+    <div class="color" data-color="#3498db"></div>
+    <div class="color" data-color="#2ecc71"></div>
+    <div class="color active" data-color="#1abc9c"></div>
+    <div class="color" data-color="#f1c40f"></div>
+    <div class="color" data-color="#e67e22"></div>
+    <div class="color" data-color="#E73C61"></div>
+    <div class="color" data-color="pink"></div>
+  </nav>
+  <script src="./utils.js"></script>
+  <script src="./main4_learn.js"></script>
+</body>
+
+</html>
